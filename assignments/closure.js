@@ -1,4 +1,8 @@
 // ==== Challenge 1: Write your own closure ====
+/* Assignment Finder: */
+console.log("----------------------")
+console.log("You are on: closure.js")
+console.log("----------------------")
 // Write a simple closure of your own creation.  Keep it simple!
 
 
