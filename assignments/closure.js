@@ -4,7 +4,10 @@ console.log("----------------------")
 console.log("You are on: closure.js")
 console.log("----------------------")
 // Write a simple closure of your own creation.  Keep it simple!
-
+var add = (function () {
+  var counter = 0;
+  return function () {counter += 1; return counter}
+})();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
