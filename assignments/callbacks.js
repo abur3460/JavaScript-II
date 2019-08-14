@@ -77,13 +77,13 @@ function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
   if (list.indexOf(item) === -1) {
-    return cb(false);
+    return cb(`${false}: "${item}" is NOT on the list`);
   } else {
-    return cb(`${true}: "${item}" is in the list`);
+    return cb(`${true}: "${item}" is on the list`);
   }
 }
 
-contains("Gum", items, function(val) {
+contains("yo-yo", items, function(val) {
   console.log(val);
 });
 
