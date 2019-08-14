@@ -105,10 +105,10 @@ let companyTotalDonations = (runners, company_name) => {
 };
 console.log(companyTotalDonations(runners, 'Gigashots'));
 
-// Problem 2 - Order issue for Large shirts, print out all emails for runners with L size to notify them of the shirt shortage
+// Problem 2 - Due to some recent lawsuits, runners with a tshirt size above large will not be able to compete, plese print out the email of any runners with a shirt size above L
 
 let largeShirtsEmail = runners.filter(function(runners) {
-    if (runners.shirt_size === "L") {
+    if (runners.shirt_size == "XL" || runners.shirt_size == "2XL" || runners.shirt_size == "3XL") {
         console.log(runners.email);
     }
 });
